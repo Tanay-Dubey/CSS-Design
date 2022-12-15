@@ -11,6 +11,7 @@ import Microsoft from "./images/microsoft.jpg";
 import Paypal from "./images/paypal.png";
 import Walmart from "./images/walmart.png";
 import Zoom from "./images/zoom.png";
+import Person from "./images/person.jpg";
 
 function App() {
   return (
@@ -28,15 +29,15 @@ function App() {
               <div>Trusted By The Greatest</div>
               <hr></hr>
               <div className="Logo1">
-                <img style={{width:"4rem",height:"4rem"}} src={Stripe}></img>
-                <img style={{width:"6rem",height:"2rem"}} src={Walmart}></img>
-                <img style={{width:"4rem",height:"2rem"}} src={Zoom}></img>
+                <img style={{ width: "4rem", height: "4rem" }} src={Stripe}></img>
+                <img style={{ width: "6rem", height: "2rem" }} src={Walmart}></img>
+                <img style={{ width: "4rem", height: "2rem" }} src={Zoom}></img>
               </div>
               <div className="Logo2">
-                <img style={{width:"6rem",height:"2rem"}} src={Microsoft}></img>
-                <img style={{width:"4rem",height:"1.5rem"}} src={Google}></img>
-                <img style={{width:"4rem",height:"1.5rem"}} src={Paypal}></img>
-                <img style={{width:"4rem",height:"2rem"}} src={Amazon}></img>
+                <img style={{ width: "6rem", height: "2rem" }} src={Microsoft}></img>
+                <img style={{ width: "4rem", height: "1.5rem" }} src={Google}></img>
+                <img style={{ width: "4rem", height: "1.5rem" }} src={Paypal}></img>
+                <img style={{ width: "4rem", height: "2rem" }} src={Amazon}></img>
               </div>
             </div>
           </div>
@@ -83,15 +84,45 @@ function App() {
                 <div style={{ marginTop: "0.5rem", color: "white" }}>Billable 42:00</div>
               </div>
             </div>
+            <div>
+              <img src={Person} style={{ width: "6rem", height: "6rem", alignSelf: "center", borderRadius: "50%" }}></img>
+            </div>
           </div>
           <div className="WhiteCard">
             <button>Design</button>
             <ul>
-              <li><span>Design System</span></li>
-              <hr></hr>
-              <li><span>Platform Structure</span></li>
-              <hr></hr>
-              <li><span>Design Review</span></li>
+              <li>
+                <div style={{ display: "flex", justifyContent: "space-between" }}>
+                  <div>Design System</div>
+                  <div style={{ display: "flex" }}>
+                    <div style={{ marginRight: "1rem" }}>27:40:12</div>
+                    <div style={{ width: "4.5rem" }}>
+                      <img src={Person} style={{ position: "absolute", right: "2rem", width: "2rem", height: "2rem", borderRadius: "50%" }}></img>
+                      <img src={Person} style={{ width: "2rem", height: "2rem", borderRadius: "50%" }}></img>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><div style={{ display: "flex", justifyContent: "space-between" }}>
+                <div>Platform Structure</div>
+                <div style={{ display: "flex" }}>
+                  <div style={{ marginRight: "1rem" }}>34:28:35</div>
+                  <div style={{ width: "4.5rem" }}>
+                    <img src={Person} style={{ position: "absolute", right: "2rem", width: "2rem", height: "2rem", borderRadius: "50%" }}></img>
+                    <img src={Person} style={{ width: "2rem", height: "2rem", borderRadius: "50%" }}></img>
+                  </div>
+                </div>
+              </div></li>
+              <li><div style={{ display: "flex", justifyContent: "space-between" }}>
+                <div>Design Review</div>
+                <div style={{ display: "flex" }}>
+                  <div style={{ marginRight: "1rem" }}>19:35:54</div>
+                  <div style={{ width: "4.5rem" }}>
+                    <img src={Person} style={{ position: "absolute", right: "2rem", width: "2rem", height: "2rem", borderRadius: "50%" }}></img>
+                    <img src={Person} style={{ width: "2rem", height: "2rem", borderRadius: "50%" }}></img>
+                  </div>
+                </div>
+              </div></li>
             </ul>
           </div>
         </div>
